@@ -16,7 +16,7 @@ use App\Http\Controllers\FormController;
 */
 
 //dass
-Route::get('/request-a-quote', [FormController::class, 'show'])
+Route::get('/', [FormController::class, 'show'])
 ->name('form');
 
 Route::post('/store-form', [FormController::class, 'store'])
@@ -34,9 +34,3 @@ Route::post('login', [AuthenticatedSessionController::class, 'store'])
 
 Route::delete('logout', [AuthenticatedSessionController::class, 'destroy'])
     ->name('logout');
-
-// Dashboard
-
-Route::get('/', [DashboardController::class, 'index'])
-    ->name('dashboard')
-    ->middleware('auth');

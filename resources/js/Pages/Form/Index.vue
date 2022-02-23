@@ -54,7 +54,7 @@
                             <td>
                                 <div>
                                     <b-form-input type="text" class="rounded" v-model="box.item" 
-                                            placeholder="Item name" required>
+                                            placeholder="Product name" required>
                                     </b-form-input>
                                 </div>
                             </td>
